@@ -1,11 +1,18 @@
-**In this lab I will practice how to use tmux command to manage how to control multople terminal sessions on Linux.**
+#In this lab I will practice how to use tmux command to manage how to control multople terminal sessions on Linux.
 
-![Install tmux and create a new tmux session "new-session". To switch to new-session I used Ctrl+b d](https://freeimage.host/i/3eS12YG)
+## Install tmux and Create a New Session. To switch to `new-session`, use: `Ctrl+b d`
+
+![Install tmux and create a new tmux session "new-session".](https://freeimage.host/i/3eS12YG)
 
 **Configurate tmux.conf file to make it more usable**
 
+### 1. Basic tmux settings:
 ![First Image - tmux settings](https://freeimage.host/i/3egoFIa)
+
+### 2. Additional configurations:
 ![Second Image - another tmux configuration](https://freeimage.host/i/3egoFIa)
+
+### 3. Final setup adjustments:
 ![Third Image - another tmux configuration](https://freeimage.host/i/3egYkiX)
 
 
