@@ -4,7 +4,7 @@
 
 ![Install tmux and create a new tmux session "new-session".](https://freeimage.host/i/3eS12YG)
 
-**Configurate tmux.conf file to make it more usable**
+# Configure tmux.conf file to make it more usable
 
 ### 1. Basic tmux settings:
 ![First Image - tmux settings](https://freeimage.host/i/3egoFIa)
