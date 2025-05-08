@@ -1,1 +1,49 @@
+**In this lab I will practice how to use tmux command to manage how to control multople terminal sessions on Linux.**
 
+![Install tmux and create a new tmux session "new-session". To switch to new-session I used Ctrl+b d](https://freeimage.host/i/3eS12YG)
+
+**Configurate tmux.conf file to make it more usable**
+
+![First Image - tmux settings](https://freeimage.host/i/3egoFIa)
+![Second Image - another tmux configuration](https://freeimage.host/i/3egoFIa)
+![Third Image - another tmux configuration](https://freeimage.host/i/3egYkiX)
+
+
+# Change prefix to 'Ctrl+a'
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# Enable mouse support
+set -g mouse on
+
+# Start pane and window numbering from 1
+set -g base-index 1
+setw -g pane-base-index 1
+set -g renumber-windows on
+
+# Disable automatic renaming
+set-option -wg automatic-rename off
+
+# Increase history
+set-option -g history-limit 5000
+
+# Set the default terminal mode
+bind-key C-a send-prefix
+
+# Enable mouse support
+set -g mouse on
+
+# Start pane and window numbering from 1
+set -g base-index 1
+setw -g pane-base-index 1
+set -g renumber-windows on
+
+# Disable automatic renaming
+set-option -wg automatic-rename off
+
+# Increase history
+set-option -g history-limit 5000
+
+# Set the default terminal mode
+set -g default-terminal "screen-256color"
