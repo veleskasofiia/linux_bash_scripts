@@ -1,0 +1,23 @@
+# In this lab, I will practice writing a bash script and scheduling it using the crontab command. The goal is to automate recurring tasks efficiently in a Linux (Ubuntu).
+
+
+#!/bin/bash
+echo "Backup on $DATE" >> "$BACKUP_DIR/backup.txt"
+
+DATE=$(date +%d-%m-%Y)
+BACKUP_DIR="/root/backup"
+
+#Creating backup
+HOSTNAME=$(hostname)
+tar -zcvpf "$BACKUP_DIR/yeahhub-"$DATE".tar.gz" /var/www/html # irectory where website files are stored
+
+#Deleting old backups
+find "$BACKUP_DIR" -mtime +30 -delete
+
+#Email notification
+mail -s "Backup successful" companymail@gmail.com < /dev/null
+
+
+
+
+
