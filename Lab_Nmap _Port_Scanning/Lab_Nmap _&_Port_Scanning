@@ -1,0 +1,39 @@
+# In this Lab I will practice using Nmap as a network scanning and security auditing tool.
+
+#!/bin/bash
+# Simple nmap scan script for localhost
+# Author: Sofiia Veleska
+# Description: Scans ports and detects service versions on localhost 127.0.0.1
+
+# Update packages
+sudo apt-get update
+
+# Install nmap 
+sudo apt-get install nmap -y
+
+# Scan ports from 1 to 10000 on localhost
+nmap -p 1-10000 127.0.0.1
+
+# Result:
+# PORT     STATE SERVICE
+# 22/tcp   open  ssh       # Port used for secure remote access
+# 3001/tcp open  ssl       # Port possibly used for web development or a custom app
+
+# Protocol Explanation: TCP vs UDP
+# TCP:
+# - Ensures data accuracy
+# - Requests retransmission if packets are lost
+# - Ideal for applications like web browsing, banking, file transfers apod.
+#
+# UDP:
+# - Much faster than TCP
+# - Preferred for real-time applications (live streaming, online games apod.)
+# - Less reliable
+
+# Scan localhost for service versions
+nmap -sV 127.0.0.1
+
+# Result:
+# PORT     STATE SERVICE VERSION
+# 22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+# 3001/tcp open  ssl/nessus?     # Unknown or custom service
