@@ -1,24 +1,23 @@
 #!/bin/bash
+# Autor: Sofiia Veleska
+# Date: 05/05/2025
+# Description: Cleanig system cache, packages, trash removal
 
-echo "Cleaning system"
+echo "Starting cleaning system..."
 
 # Clear APT cache
-
 echo "Cleaning APT cache"
 sudo apt clean
 sudo apt autoclean
 
 # Remove unused packages
-
 echo "Remove unused packages"
 sudo apt autoremove -y
 
 # Clear user cache
-
 echo "Clearing user cache"
 sudo -rf ~/.cache/*
 
 # Empty trash
-
 echo "Empty cache"
 rm -rf ~/.local/share/Trash/files/*
