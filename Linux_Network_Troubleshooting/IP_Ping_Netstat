@@ -3,7 +3,7 @@ editing file: nano troubleshooting.sh
 after save file checking script: bash troubleshooting.sh
 Basic troubleshooting complete.
 
-#!bash/bin
+#!bin/bash
 # Autor: Sofiia Veleska
 # Date : 19/05/2025
 # Description: Basic troubleshooting 
@@ -23,7 +23,7 @@ echo -e "\n>>Network conections<<"
 netstat -tulnp
 
 #Checking network  connection to external services
-TARGET = "8.8.8.8" #DNS google server
+TARGET="8.8.8.8" #DNS google server
 echo -e  "\n>>Pinging $Target<<"
 ping -c 4 $TARGET
 
