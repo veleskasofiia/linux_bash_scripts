@@ -3,7 +3,7 @@ editing file: nano troubleshooting.sh
 after save file checking script: bash troubleshooting.sh
 Basic troubleshooting complete.
 
-#!bin/bash
+#!/bin/bash
 # Autor: Sofiia Veleska
 # Date : 19/05/2025
 # Description: Basic troubleshooting 
